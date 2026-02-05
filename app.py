@@ -5,18 +5,16 @@ import time
 
 st.title('cocoBalistique 🥥')
 
-st.text("Cette application calcule la trajectoire d'une noix de coco lancé dans le ciel à partir d'une vitesse initiale et un angle d'inclinaison.")
+st.text("Cette application calcule la trajectoire d'une noix de coco lancée dans le ciel à partir d'une vitesse initiale et d'un angle d'inclinaison.")
 
 st.header("Choix des paramètres", divider=True)
 
 # Paramètres
-#v0 = 10.0                     # m/s
-#alpha = np.deg2rad(45)        # radians
 g = 9.81                      # m/s²
 
-v0 = st.slider("Vitesse initiale (m/s) : ", 5, 100, 10)
+v0 = st.slider("Vitesse initiale (m/s) : ", 5, 100, 10) # par défaut v0 = 10 m/s
 
-alpha = st.slider("Angle de tir (degrés)", 5, 85, 45)
+alpha = st.slider("Angle de tir (degrés)", 5, 85, 45) # par défaut alpha = 45°
 alpha = np.deg2rad(alpha)
 
 if st.button("Lancer le programme", type="secondary"):
