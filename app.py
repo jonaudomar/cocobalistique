@@ -17,7 +17,7 @@ g = 9.81                      # m/s²
 v0 = st.slider("Vitesse initiale (m/s) : ", 5, 100, 10)
 
 alpha = st.slider("Angle de tir (degrés)", 5, 85, 45)
-alpha = np.deg2rad(45)
+alpha = np.deg2rad(alpha)
 
 if st.button("Lancer le programme", type="secondary"):
 
